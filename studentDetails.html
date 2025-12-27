@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - Student Management System</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="studentDetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <img src="Images/logo.png" alt="logo">
+            <div class="top">
+                <a href=""><i class="fa-solid fa-database"></i> Dashboard</a>
+                <a href=""><i class="fa-solid fa-people-group"></i> Students</a>
+                <a href=""><i class="fa-solid fa-address-card"></i> Add Students</a>
+                <a href=""><i class="fa-solid fa-file"></i> Reports</a>
+            </div>
+            <div class="bottom">
+                <a href=""><i class="fa-solid fa-gear"></i> Setting</a>
+                <a href=""><i class="fa-solid fa-hand-holding-hand"></i> Help</a>
+            </div>
+        </nav>
+        <!-- --- Content Section --- -->
+        <div class="hero">
+            <!-- --- Top Side --- -->
+            <header>
+                <div class="heading" >
+                    <h2>Students Management</h2>
+                    <p>View, search, and manage all registered students from one place.</p>
+                </div>
+                <span>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-address-card"></i>
+                </span>
+            </header>
+
+            <!-- --- Content --- -->
+            <main>
+                <!-- ------- Top Section Nav 3 ------- -->
+                <div class="lower-nav">
+                    <div class="search">
+                        <input type="search" placeholder="Search by student name or email" id="search" name="search">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </div>
+                    <div class="filter">
+                        <select name="filter" id="filter">
+                            <option value="Filter" selected>Filter</option>
+                            <option value="All Course">All Course</option>
+                            <option value="computer Science">Computer Science</option>
+                            <option value="machanical">Machanical</option>
+                            <option value="civil">Civil</option>
+                        </select>
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                </div>
+                <!-- --- Data --- -->
+
+                <!-- -------------- -->
+                <!-- Recent Students Section -->
+                <section class="recent-students">
+                    <div class="section-header">
+                        <h2>Recent Students</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Course</th>
+                                <th>Admission Date</th>
+                                <th>Status</th>
+                                <th>View</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Rahul Sharma</td>
+                                <td>va691187@gmail.com</td>
+                                <td>Computer Science</td>
+                                <td>12 Aug 2025</td>
+                                <td><span class="status active">Active</span></td>
+                                <td><i class="fa-solid fa-eye"></i></td>
+                                <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                <td><i class="fa-solid fa-calendar-minus"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Anjali Verma</td>
+                                <td>va691187@gmail.com</td>
+                                <td>Mechanical</td>
+                                <td>10 Aug 2025</td>
+                                <td><span class="status active">Active</span></td>
+                                <td><i class="fa-solid fa-eye"></i></td>
+                                <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                <td><i class="fa-solid fa-calendar-minus"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Amit Kumar</td>
+                                <td>va691187@gmail.com</td>
+                                <td>Civil</td>
+                                <td>08 Aug 2025</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                                <td><i class="fa-solid fa-eye"></i></td>
+                                <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                <td><i class="fa-solid fa-calendar-minus"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- ---- Pagination ---- -->
+                <div class="pagination-container">
+                    <span class="page-info">Showing 1–5 of 20 students</span>
+
+                    <div class="pagination">
+                        <button id="prevBtn">Previous</button>
+                        <div id="pageNumbers"></div>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                </div>
+                <!-- ------------ -->
+
+                <!-- Footer -->
+                <footer class="dashboard-footer">
+                    <p>© 2025 Student Management System | Admin Dashboard</p>
+                </footer>
+
+                <!-- ------------------------ -->
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

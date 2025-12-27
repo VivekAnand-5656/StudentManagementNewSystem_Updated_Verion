@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Student Management System</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <img src="Images/logo.png" alt="logo">
+            <div class="top">
+                <a href="./index.html"><i class="fa-solid fa-database"></i> Dashboard</a>
+                <a href="./studentDetails.html"><i class="fa-solid fa-people-group"></i> Students</a>
+                <a href="./studentform.html"><i class="fa-solid fa-address-card"></i> Add Students</a>
+                <a href=""><i class="fa-solid fa-file"></i> Reports</a>
+            </div>
+            <div class="bottom">
+                <a href=""><i class="fa-solid fa-gear"></i> Setting</a>
+                <a href=""><i class="fa-solid fa-hand-holding-hand"></i> Help</a>
+            </div>
+        </nav>
+        <!-- --- Content Section --- -->
+        <div class="hero">
+            <!-- --- Top Side --- -->
+            <header>
+                <h2>Dashboard</h2>
+                <input type="search" name="search" placeholder="Search Students">
+                <span>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-address-card"></i>
+                </span>
+            </header>
+            <!-- --- Content --- -->
+            <main>
+                <!-- --- Data --- -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <img src="Images/studenticon.png" alt="">
+                        <div class="under">
+                            <h4>Total Students</h4>
+                            <p>All registered students</p>
+                        </div>
+                        <span class="num">255</span>
+                    </div>
+                    <div class="stat-card">
+                        <img src="Images/courseicon.png" alt="">
+                        <div class="under">
+                            <h4>Active Courses</h4>
+                            <p>Courses currently available</p>
+                        </div>
+                        <span class="num">255</span>
+                    </div>
+                    <div class="stat-card">
+                        <img src="Images/admisionicon.png" alt="">
+                        <div class="under">
+                            <h4>New Admission</h4>
+                            <p>Add this month</p>
+                        </div>
+                        <span class="num">255</span>
+                    </div>
+                </div>
+                <!-- -------------- -->
+                <!-- Recent Students Section -->
+                <section class="recent-students">
+                    <div class="section-header">
+                        <h2>Recent Students</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Admission Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rahul Sharma</td>
+                                <td>Computer Science</td>
+                                <td>12 Aug 2025</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Anjali Verma</td>
+                                <td>Mechanical</td>
+                                <td>10 Aug 2025</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Amit Kumar</td>
+                                <td>Civil</td>
+                                <td>08 Aug 2025</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- System Summary Section -->
+                <section class="system-summary">
+                    <h2>System Summary</h2>
+
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <h3>Most Popular Course</h3>
+                            <p>Computer Science</p>
+                        </div>
+
+                        <div class="summary-card">
+                            <h3>Total Active Students</h3>
+                            <p>245</p>
+                        </div>
+
+                        <div class="summary-card">
+                            <h3>Last Updated</h3>
+                            <p>Today, 10:30 AM</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reports Preview -->
+                <section class="reports-preview">
+                    <h2>Reports & Insights</h2>
+                    <div class="report-box">
+                        <p>Student enrollment analytics will appear here.</p>
+                        <span>Chart Placeholder</span>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="dashboard-footer">
+                    <p>© 2025 Student Management System | Admin Dashboard</p>
+                </footer>
+
+                <!-- ------------------------ -->
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
