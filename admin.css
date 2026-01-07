@@ -30,6 +30,11 @@ body::-webkit-scrollbar {
     padding: 0.5rem;
 }
 
+.top a.active{
+  background: #ffffff;
+  color: #000;
+}
+
 nav {
     background: #1E195B;
     width: 15%;
