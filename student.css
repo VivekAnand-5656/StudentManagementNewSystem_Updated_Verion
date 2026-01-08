@@ -150,8 +150,7 @@ form input,select{
   height: 40px;
   padding: 0.2rem;
   border: none;  
-  outline-color: #1E195B;
-  cursor: pointer;
+  outline-color: #1E195B; 
   box-shadow: 2px 2px 5px inset #a7a5a5;
   border-radius: 0.2rem;
 }

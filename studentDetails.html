@@ -16,8 +16,8 @@
             <img src="Images/logo.png" alt="logo">
             <div class="top">
                 <a href="./admin.html"><i class="fa-solid fa-database"></i> Dashboard</a>
-                <a href="./studentDetails.html" class="active" ><i class="fa-solid fa-people-group"></i> Students</a>
-                <a href="./student.html"  ><i class="fa-solid fa-address-card"></i> Add Students</a>
+                <a href="./studentDetails.html" class="active"><i class="fa-solid fa-people-group"></i> Students</a>
+                <a href="./student.html"><i class="fa-solid fa-address-card"></i> Add Students</a>
                 <a href=""><i class="fa-solid fa-file"></i> Reports</a>
             </div>
             <div class="bottom">
@@ -29,7 +29,7 @@
         <div class="hero">
             <!-- --- Top Side --- -->
             <header>
-                <div class="heading" >
+                <div class="heading">
                     <h2>Students Management</h2>
                     <p>View, search, and manage all registered students from one place.</p>
                 </div>
@@ -75,47 +75,13 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Course</th>
-                                <th>Admission Date</th>
-                                <th>Status</th>
                                 <th>View</th>
                                 <th>Edit</th>
                                 <th>Remove</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Rahul Sharma</td>
-                                <td>va691187@gmail.com</td>
-                                <td>Computer Science</td>
-                                <td>12 Aug 2025</td>
-                                <td><span class="status active">Active</span></td>
-                                <td><i class="fa-solid fa-eye"></i></td>
-                                <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                <td><i class="fa-solid fa-calendar-minus"></i></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Anjali Verma</td>
-                                <td>va691187@gmail.com</td>
-                                <td>Mechanical</td>
-                                <td>10 Aug 2025</td>
-                                <td><span class="status active">Active</span></td>
-                                <td><i class="fa-solid fa-eye"></i></td>
-                                <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                <td><i class="fa-solid fa-calendar-minus"></i></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Amit Kumar</td>
-                                <td>va691187@gmail.com</td>
-                                <td>Civil</td>
-                                <td>08 Aug 2025</td>
-                                <td><span class="status inactive">Inactive</span></td>
-                                <td><i class="fa-solid fa-eye"></i></td>
-                                <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                <td><i class="fa-solid fa-calendar-minus"></i></td>
-                            </tr>
+                        <tbody class="studentBody" id="studentBody">
+                            <!-- --- Data Come From LocalStorage --- -->
                         </tbody>
                     </table>
                 </section>
@@ -138,8 +104,26 @@
 
                 <!-- ------------------------ -->
             </main>
+            <!-- ==== Show Data of Student ==== -->
+            <div class="showPage">
+                <i class="fa-solid fa-xmark cross"></i>
+                <div class="profile">
+                    <img src="" alt="profile">
+                    <p>Name : </p>
+                    <p>Eamil : </p>
+                    <p>Contact : </p>
+                    <p>DOB : </p>
+                    <p>Enrollment Number : </p>
+                    <p>Course : </p>
+                    <p>Semester : </p>
+                    <p>Address : </p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- ---- JS ---- -->
+    <script src="studentDetails.js"></script>
 </body>
 
 </html>

@@ -16,10 +16,7 @@ form.addEventListener("submit", (e) => {
     if(mobile.length != 10){ 
         alert("Enter Valid Mobile Number")
         return;
-    } else if(year.length != 4){
-         alert("Enter Valid Year")
-        return;
-    }
+    }  
     // ----------------------- Bs ab Table m Add Krna hai  ----------
 
     const student = {
@@ -38,3 +35,8 @@ form.addEventListener("submit", (e) => {
     form.reset();
 
 });
+
+const cancelBtn = document.getElementById("cancel");
+cancelBtn.addEventListener("click",()=>{
+    window.location.href = "studentDetails.html";
+})

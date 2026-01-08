@@ -239,23 +239,20 @@ section {
 .students-table tbody tr:hover {
   background-color: #f9fafc;
 }
-
-/* Status badge */
-.status {
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 12px;
+ 
+.delete{
+  color: red;
+  cursor: pointer;
 }
-
-.status.active {
-  background-color: #e6f7ee;
-  color: #1a7f37;
+.fa-eye{
+  color: #4f46e5;
+  cursor: pointer;
 }
-
-.status.inactive {
-  background-color: #fdecea;
-  color: #b42318;
+.fa-pen-to-square{
+  color: #333;
+  cursor: pointer;
 }
+ 
 /* ---------- Pagination --------- */
 .pagination-container {
   display: flex;
@@ -310,6 +307,24 @@ section {
   color: #777;
   margin-top: 20px;
 }
+ 
+/* ---- Show Data of Student ---- */
+.showPage{
+  width: 50%;
+  height: 40vw;
+  margin-left: 10%; 
+  position: fixed;
+  background: #ffffff; 
+  border: 2px solid #1E195B;
+  top: 0;
+  border-radius: 0.5rem; 
+  padding: 0.5rem;
 
-
-/* --- Yaha Tak --- */
+}
+.cross{
+  margin-left: 95%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
